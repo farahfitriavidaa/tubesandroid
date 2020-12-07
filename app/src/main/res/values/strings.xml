@@ -4,4 +4,6 @@
     <string name="login2">Untuk Masuk ke "APlikasi Musik", masukan Username dan Passwors anda di bawah ini</string>
     <string name="login3">Username</string>
     <string name="login4">Password</string>
+    <string name="login5">Belum punya akun? DAFTAR</string>
+
 </resources>
