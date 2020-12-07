@@ -20,14 +20,12 @@
         app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent">
 
+
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#B1AAAA"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@drawable/play_musik" />
+            android:layout_height="wrap_content"
+            android:src="@drawable/play_musik" />
 
         <Space
             android:layout_width="match_parent"
@@ -106,5 +104,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="1" />
     </LinearLayout>
+    
 
 </androidx.constraintlayout.widget.ConstraintLayout>
