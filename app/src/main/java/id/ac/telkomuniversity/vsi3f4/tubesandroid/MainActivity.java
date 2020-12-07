@@ -10,6 +10,9 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     Button pindahButton;
+    Button pindahPlay;
+    Button pindahLogin;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +23,24 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, DuaActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        pindahPlay = findViewById(R.id.button1);
+        pindahPlay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Play.class);
+                startActivity(intent);
+            }
+        });
+
+        pindahLogin = findViewById(R.id.button2);
+        pindahLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Registrasi.class);
                 startActivity(intent);
             }
         });
