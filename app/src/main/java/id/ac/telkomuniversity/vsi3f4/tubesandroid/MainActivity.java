@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        pindahButton = findViewById(R.id.pindahbutton);
+        pindahButton = findViewById(R.id.pindahbuttonsatu);
         pindahButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         pindahPlay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Play.class);
+                Intent intent = new Intent(MainActivity.this, Registrasi.class);
                 startActivity(intent);
             }
         });
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         pindahLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Registrasi.class);
+                Intent intent = new Intent(MainActivity.this, Play.class);
                 startActivity(intent);
             }
         });
