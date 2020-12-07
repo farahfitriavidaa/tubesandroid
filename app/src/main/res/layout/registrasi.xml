@@ -1,70 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".Registrasi"
-    android:padding="35dp">
+    tools:context=".Registrasi">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="horizontal"
+        android:padding="35dp"
+        android:background="@drawable/awal">
 
-        <Space
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="55dp" />
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textSatu"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Registrasi"
-            android:textSize="25dp"
-            android:textStyle="bold"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="55dp" />
 
-        <TextView
-            android:id="@+id/textDua"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Yuk daftarkan akun mu di *Nama Aplikasi kita*, masukan data diri mu dibawah ini." />
+            <TextView
+                android:id="@+id/textSatu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registrasi"
+                android:textSize="25dp"
+                android:textStyle="bold" />
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="35dp" />
+            <TextView
+                android:id="@+id/textDua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yuk daftarkan akun mu di *Nama Aplikasi kita*, masukan data diri mu dibawah ini." />
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Email" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="10dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email" />
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Username" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="10dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Username" />
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Password" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="50dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Password" />
 
-        <Button
-            android:id="@+id/ButtonLogin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Register" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
 
+            <Button
+                android:id="@+id/ButtonLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Register" />
+
+        </LinearLayout>
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
