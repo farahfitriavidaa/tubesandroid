@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     Button pindahButton;
     Button pindahPlay;
     Button pindahLogin;
+    Button pindahFavorit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +42,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, Play.class);
+                startActivity(intent);
+            }
+        });
+
+        pindahFavorit = findViewById(R.id.button3);
+        pindahFavorit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Favorit.class);
                 startActivity(intent);
             }
         });
