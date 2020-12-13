@@ -1,14 +1,27 @@
 package id.ac.telkomuniversity.vsi3f4.tubesandroid;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
-
+    String[] daftar;
+    ListView ListView01;
+    Menu menu;
+    protected Cursor cursor;
+    Database dbapp;
+    public static MainActivity ma;
     Button pindahButton;
     Button pindahPlay;
     Button pindahLogin;
@@ -56,10 +69,44 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    //Haii aku farah
-    //hallo
+    public void RefreshList() {
+        SQLiteDatabase db = dbapp.getReadableDatabase();
+        cursor = db.rawQuery("SELECT * FROM akun", null);
+        daftar = new String[cursor.getCount()];
+        cursor.moveToFirst();
+        for (int no = 0; no < cursor.getCount(); no++) {
+            cursor.moveToPosition(no);
+            daftar[no] = cursor.getString(1).toString();
+        }
+        ListView01 = findViewById(R.id.listView01);
+        ListView01.setAdapter(new ArrayAdapter(this, android.R.layout.simple_list_item_1, daftar));
+        ListView01.setSelected(true);
+        ListView01.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
-    //nannana
+            public void onItemClick(AdapterView arg0, View arg1, int arg2, long arg3) {
+                final String selection = daftar[arg2];
+//                final CharSequence dialogitem = {"Lihat", "Update", "Hapus"};
+                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+                builder.setTitle("Pilihan");
+//                builder.setItems(dialogitem, new DialogInterface.OnClickListener() {
+//                    public void onClick(DialogInterface dialog, int pilihan) {
+//                        switch (pilihan) {
+//                            case 0:
+//                                Intent i = new Intent(getApplica    tionContext(), Registrasi.class);
+//                                i.putExtra("username", selection);
+//                                break;
+//                        }
+//                    }
+//            });
+                builder.create().show();
+        }
+    });
+        ((ArrayAdapter) ListView01.getAdapter()).notifyDataSetInvalidated();
 
-    //hshhs
+
+
+
 }
+}
+
+
