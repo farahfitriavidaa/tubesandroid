@@ -8,6 +8,13 @@
     <string name="edit1">Farah Fitriavida A</string>
     <string name="edit2">Edit Profil</string>
     <string name="edit3">Playlist Publik</string>
+    <string name="edit4">0</string>
+    <string name="edit5">0 Pengikut</string>
+    <string name="edit6">Profile</string>
+    <string name="edit7">Favorite</string>
+    <string name="edit8">Home</string>
+    <string name="edit9">Massage</string>
+    <string name="edit10">Search</string>
 
 
 </resources>

@@ -19,6 +19,7 @@
             android:orientation="vertical">
 
             <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/gambar1"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_marginLeft="140dp"
@@ -35,7 +36,7 @@
                 android:layout_height="20dp" />
 
             <TextView
-                android:id="@+id/textView1"
+                android:id="@+id/text1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/edit1"
@@ -48,7 +49,7 @@
                 android:layout_height="20dp" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/button1"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="140dp"
@@ -60,7 +61,7 @@
                 android:layout_height="20dp" />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/text2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/edit3"
@@ -91,7 +92,7 @@
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:id="@+id/imageView3"
+                        android:id="@+id/gambar2"
                         android:layout_width="186dp"
                         android:layout_height="70dp"
                         android:layout_weight="1"
@@ -104,18 +105,18 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textView3"
+                            android:id="@+id/text3"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
-                            android:text="0"
+                            android:text="@string/edit4"
                             android:textSize="30sp"
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/textView4"
+                            android:id="@+id/text4"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
-                            android:text="Pengikut"
+                            android:text="@string/edit5"
                             android:textSize="24sp"
                             android:textStyle="bold" />
 
@@ -131,7 +132,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="100dp"
             android:orientation="horizontal">
 
             <LinearLayout
@@ -144,7 +145,7 @@
                     android:layout_height="100dp"
                     android:orientation="horizontal">
                     <ImageView
-                        android:id="@+id/imageView4"
+                        android:id="@+id/gambar3"
                         android:layout_width="180dp"
                         android:layout_height="70dp"
                         android:layout_weight="1"
@@ -157,7 +158,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textView5"
+                            android:id="@+id/text5"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
                             android:text="0"
@@ -165,7 +166,7 @@
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/textView6"
+                            android:id="@+id/text6"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
                             android:text="Pengikut"
@@ -177,21 +178,156 @@
             </LinearLayout>
         </LinearLayout>
 
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal">
+
+
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-                <ImageView
-                    android:id="@+id/imageView5"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    tools:srcCompat="@tools:sample/avatars" />
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="60dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="17dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/gambar4"
+                            android:layout_width="35dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            app:srcCompat="@drawable/baseline_account_circle_black_18dp" />
+
+                        <TextView
+                            android:id="@+id/text7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/edit6"
+                            android:textAlignment="center"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="60dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="17dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/gambar5"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            app:srcCompat="@drawable/baseline_star_black_18dp"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/text8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/edit7"
+                            android:textAlignment="center"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="60dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="17dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/gambar6"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            app:srcCompat="@drawable/baseline_home_black_18dp"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/text9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/edit8"
+                            android:textAlignment="center"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="60dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="17dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/gambar7"
+                            android:layout_width="35dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            app:srcCompat="@drawable/baseline_comment_black_18dp"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/text10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/edit9"
+                            android:textAlignment="center"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="60dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="17dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/gambar8"
+                            android:layout_width="35dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            app:srcCompat="@drawable/baseline_search_black_18dp"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/text11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/edit10"
+                            android:textAlignment="center"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
