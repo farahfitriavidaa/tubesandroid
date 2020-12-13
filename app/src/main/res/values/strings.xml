@@ -5,5 +5,9 @@
     <string name="login3">Username</string>
     <string name="login4">Password</string>
     <string name="login5">Belum punya akun? DAFTAR</string>
+    <string name="edit1">Farah Fitriavida A</string>
+    <string name="edit2">Edit Profil</string>
+    <string name="edit3">Playlist Publik</string>
+
 
 </resources>
