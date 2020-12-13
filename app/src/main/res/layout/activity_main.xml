@@ -37,4 +37,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/button1" />
 
+    <ListView
+        android:id="@+id/listView01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="27dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

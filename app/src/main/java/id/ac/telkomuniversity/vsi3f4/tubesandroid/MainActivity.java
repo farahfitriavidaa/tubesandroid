@@ -59,14 +59,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        pindahFavorit = findViewById(R.id.button3);
-        pindahFavorit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Favorit.class);
-                startActivity(intent);
-            }
-        });
+//        pindahFavorit = findViewById(R.id.button3);
+//        pindahFavorit.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(MainActivity.this, Favorit.class);
+//                startActivity(intent);
+//            }
+//        });
     }
 
     public void RefreshList() {
