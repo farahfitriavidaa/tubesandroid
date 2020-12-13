@@ -15,6 +15,14 @@
     <string name="edit8">Home</string>
     <string name="edit9">Massage</string>
     <string name="edit10">Search</string>
+    <string name="cari1">Cari</string>
+    <string name="cari2">Cari lagu yang kamu inginkan dengar sekarang disini ya</string>
+    <string name="cari3">Hip-hop</string>
+    <string name="cari4">Rock</string>
+    <string name="cari5">EDM</string>
+    <string name="cari6">Love</string>
+    <string name="cari7">Relaxing</string>
+    <string name="cari8">Famele</string>
 
 
 </resources>
