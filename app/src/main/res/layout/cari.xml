@@ -100,7 +100,7 @@
                             android:textColor="@color/colorWhite"
                             android:textSize="30sp"
                             android:textStyle="bold"
-                            app:srcCompat="@drawable/afganDua" />
+                            app:srcCompat="@drawable/afgan" />
                     </LinearLayout>
                 </LinearLayout>
 
