@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
@@ -26,12 +27,22 @@ public class MainActivity extends AppCompatActivity {
     Button pindahPlay;
     Button pindahLogin;
     Button pindahEdit;
+    Button pindahcari;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+        pindahcari = findViewById(R.id.button4);
+        pindahcari.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Cari.class);
+                startActivity(intent);
+            }
+        });
         pindahButton = findViewById(R.id.pindahbuttonsatu);
         pindahButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
         pindahEdit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Play.class);
+                Intent intent = new Intent(MainActivity.this, Edit.class);
                 startActivity(intent);
             }
         });
