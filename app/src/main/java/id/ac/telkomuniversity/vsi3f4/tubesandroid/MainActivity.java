@@ -17,23 +17,18 @@ import android.widget.ImageButton;
 import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
-    String[] daftar;
-    Menu menu;
-    ListView listView01;
-    protected Cursor cursor;
-    Database dbapp;
-    public static MainActivity ma;
     Button pindahButton;
     Button pindahPlay;
     Button pindahLogin;
     Button pindahEdit;
     Button pindahcari;
+    Button pindahHome;
+    Button pindahFavorit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
 
         pindahcari = findViewById(R.id.button4);
         pindahcari.setOnClickListener(new View.OnClickListener() {
@@ -78,52 +73,25 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-    }
 
-    public void RefreshList(){
-        SQLiteDatabase db = dbapp.getReadableDatabase();
-        cursor = db.rawQuery("SELECT * FROM akun", null);
-        daftar = new String[cursor.getCount()];
-        cursor.moveToFirst();
-        for(int no=0;no<cursor.getCount();no++){
-            cursor.moveToPosition(no);
-            daftar[no] = cursor.getString(1).toString();
-        }
-        listView01 = findViewById(R.id.yolist);
-        listView01.setAdapter(new ArrayAdapter(this, android.R.layout.simple_list_item_1,daftar));
-        listView01.setSelected(true);
-        listView01.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        pindahHome = findViewById(R.id.home);
+        pindahHome.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onItemClick(AdapterView arg0 , View arg1, int arg2, long arg3) {
-                final String selection = daftar[arg2];
-                final CharSequence[] dialogitem = {"Lihat","Update","Hapus"};
-                AlertDialog.Builder builder  = new AlertDialog.Builder(MainActivity.ma);
-                builder.setTitle("Pilihan");
-                builder.setItems(dialogitem, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        switch(which){
-                            case 0:
-                                Intent i = new Intent(getApplicationContext(),LihatAkun.class);
-                                i.putExtra("username",selection);
-                                startActivity(i);
-                                break;
-                            case 1:
-                                Intent in = new Intent(getApplicationContext(),LihatAkun.class);
-                                in.putExtra("username",selection);
-                                startActivity(in);
-                                break;
-                            case 2:
-                                SQLiteDatabase db = dbapp.getWritableDatabase();
-                                db.execSQL("delete from akun where username = '" + selection +  "'");
-                                RefreshList();
-                                break;
-                        }
-                    }
-                });
-                builder.create().show();
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,Home.class);
+                startActivity(intent);
             }
         });
-        ((ArrayAdapter) listView01.getAdapter()).notifyDataSetInvalidated();
+
+        pindahFavorit = findViewById(R.id.favorit);
+        pindahFavorit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,Favorit.class);
+                startActivity(intent);
+            }
+        });
     }
+
+
 }

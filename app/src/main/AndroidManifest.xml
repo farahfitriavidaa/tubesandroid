@@ -10,7 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-
+        <activity android:name=".Cari"></activity>
+        <activity android:name=".Home"></activity>
+        <activity android:name=".Favorit"></activity>
         <activity android:name=".DuaActivity"></activity>
         <activity android:name=".Registrasi"></activity>
         <activity android:name=".Play"></activity>

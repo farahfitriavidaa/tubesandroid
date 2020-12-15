@@ -1,6 +1,7 @@
 package id.ac.telkomuniversity.vsi3f4.tubesandroid;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -27,18 +28,26 @@ public class Registrasi extends Activity {
         pass  = findViewById(R.id.password);
         btn1  = findViewById(R.id.ButtonLogin);
 
+        //register
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                SQLiteDatabase db = dbapp.getWritableDatabase();
-                db.execSQL("insert into akun(email, username, password) values(''" +
-                        email.getText().toString() + "','" +
-                        user.getText().toString() + "','" +
-                        pass.getText().toString() + "')");
-                Toast.makeText(getApplicationContext(), "Berhasil", Toast.LENGTH_LONG).show();
-                MainActivity.ma.RefreshList();
-                finish();
+                String strEmail    = email.getText().toString();
+                String strUsername = user.getText().toString();
+                String strPassword = pass.getText().toString();
+                Boolean daftar = dbapp.insertUser(strEmail,strUsername,strPassword);
+                if(daftar == true){
+                    Toast.makeText(getApplicationContext(),"Daftar Berhasil",Toast.LENGTH_SHORT).show();
+                    Intent loginIntent = new Intent(Registrasi.this, DuaActivity.class);
+                    startActivity(loginIntent);
+                    finish();
+                }else{
+                    Toast.makeText(getApplicationContext(),"Daftar Gagal",Toast.LENGTH_SHORT).show();
+                }
+
             }
         });
     }
-}
+    }
+
+
