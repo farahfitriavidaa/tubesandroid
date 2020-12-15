@@ -13,7 +13,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="650dp"
+            android:layout_height="630dp"
             android:background="@color/colorBlack"
             android:orientation="vertical">
 
@@ -30,7 +30,7 @@
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="20dp" />
+                android:layout_height="10dp" />
 
             <TextView
                 android:id="@+id/text2"
@@ -44,7 +44,7 @@
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="30dp" />
+                android:layout_height="20dp" />
 
             <SearchView
                 android:layout_width="match_parent"
@@ -69,7 +69,7 @@
                     <LinearLayout
                         android:layout_width="150dp"
                         android:layout_height="130dp"
-                        android:layout_marginLeft="30dp"
+                        android:layout_marginLeft="5dp"
                         android:orientation="vertical">
 
                         <Button
@@ -116,7 +116,7 @@
                     <LinearLayout
                         android:layout_width="150dp"
                         android:layout_height="130dp"
-                        android:layout_marginLeft="30dp"
+                        android:layout_marginLeft="5dp"
                         android:orientation="vertical">
 
                         <Button
@@ -164,7 +164,7 @@
                     <LinearLayout
                         android:layout_width="150dp"
                         android:layout_height="130dp"
-                        android:layout_marginLeft="30dp"
+                        android:layout_marginLeft="5dp"
                         android:orientation="vertical">
 
                         <Button
@@ -215,7 +215,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="5dp"
                 android:orientation="vertical">
 
                 <LinearLayout
@@ -229,10 +229,9 @@
                         android:orientation="vertical">
 
                         <ImageButton
-                            android:id="@+id/imageButton1"
-                            android:layout_width="35dp"
-                            android:layout_height="40dp"
-                            android:layout_marginLeft="10dp"
+                            android:id="@+id/imageButton11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
                             app:srcCompat="@drawable/baseline_account_circle_black_18dp" />
 
                         <TextView
