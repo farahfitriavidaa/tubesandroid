@@ -10,7 +10,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"><![CDATA[>
+
+        ]]>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -37,7 +39,7 @@
                 android:id="@+id/text2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
+                android:layout_marginLeft="5dp"
                 android:text="@string/cari2"
                 android:textColor="@color/colorWhite"
                 android:textSize="14sp"
@@ -47,11 +49,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="20dp" />
 
-            <SearchView
+            <Button
+                android:id="@+id/button"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:background="@color/colorAbu"
-                android:radius="15dp" />
+                android:layout_height="wrap_content"
+                android:text="pencarian"
+                />
 
             <Space
                 android:layout_width="match_parent"
@@ -204,150 +207,113 @@
 
         </LinearLayout>
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="10dp" />
-
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorWhite"
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="5dp"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
                 android:orientation="vertical">
 
-                <LinearLayout
+                <ImageButton
+                    android:id="@+id/imageButton"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:layout_height="40dp"
+                    android:background="@color/colorWhite"
+                    android:src="@drawable/baseline_account_circle_black_18dp" />
 
-                    <LinearLayout
-                        android:layout_width="60dp"
-                        android:layout_height="100dp"
-                        android:orientation="vertical">
-
-                        <ImageButton
-                            android:id="@+id/imageButton11"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            app:srcCompat="@drawable/baseline_account_circle_black_18dp" />
-
-                        <TextView
-                            android:id="@+id/text7"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/edit6"
-                            android:textAlignment="center"
-                            android:textSize="12sp"
-                            android:textStyle="bold" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="60dp"
-                        android:layout_height="100dp"
-                        android:layout_marginLeft="17dp"
-                        android:orientation="vertical">
-
-                        <ImageButton
-                            android:id="@+id/imageButton2"
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:layout_marginLeft="10dp"
-                            app:srcCompat="@drawable/baseline_star_black_18dp"
-
-                            />
-
-                        <TextView
-                            android:id="@+id/text8"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/edit7"
-                            android:textAlignment="center"
-                            android:textSize="12sp"
-                            android:textStyle="bold" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="60dp"
-                        android:layout_height="100dp"
-                        android:layout_marginLeft="17dp"
-                        android:orientation="vertical">
-
-                        <ImageButton
-                            android:id="@+id/imageButton3"
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:layout_marginLeft="10dp"
-                            app:srcCompat="@drawable/baseline_home_black_18dp"
-
-                            />
-
-                        <TextView
-                            android:id="@+id/text9"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/edit8"
-                            android:textAlignment="center"
-                            android:textSize="12sp"
-                            android:textStyle="bold" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="60dp"
-                        android:layout_height="100dp"
-                        android:layout_marginLeft="17dp"
-                        android:orientation="vertical">
-
-                        <ImageButton
-                            android:id="@+id/imageButton4"
-                            android:layout_width="35dp"
-                            android:layout_height="40dp"
-                            android:layout_marginLeft="10dp"
-                            app:srcCompat="@drawable/baseline_comment_black_18dp"
-
-                            />
-
-                        <TextView
-                            android:id="@+id/text10"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/edit9"
-                            android:textAlignment="center"
-                            android:textSize="12sp"
-                            android:textStyle="bold" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="60dp"
-                        android:layout_height="100dp"
-                        android:layout_marginLeft="17dp"
-                        android:orientation="vertical">
-
-
-                        <ImageButton
-                            android:id="@+id/imageButton5"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            app:srcCompat="@drawable/baseline_search_black_18dp" />
-
-                        <TextView
-                            android:id="@+id/text11"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/edit10"
-                            android:textAlignment="center"
-                            android:textSize="12sp"
-                            android:textStyle="bold" />
-                    </LinearLayout>
-                </LinearLayout>
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/edit6"
+                    android:textAlignment="center" />
             </LinearLayout>
-        </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imageButton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/colorWhite"
+                    android:src="@drawable/baseline_star_black_18dp" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/edit7"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/colorWhite"
+                    android:src="@drawable/baseline_home_black_18dp" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/edit8"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imageButton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/colorWhite"
+                    android:src="@drawable/baseline_chat_black_18dp" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/edit9"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imageButton4"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/colorWhite"
+                    android:src="@drawable/baseline_search_black_18dp" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/edit10"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+        </LinearLayout>
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

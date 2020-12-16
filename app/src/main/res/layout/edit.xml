@@ -11,19 +11,22 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:background="@color/colorBlack"
+
        >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="320dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:background="@drawable/awal">
 
             <com.mikhaellopez.circularimageview.CircularImageView
                 android:id="@+id/gambar1"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:layout_marginLeft="120dp"
-                android:layout_marginTop="37dp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="107dp"
                 android:src="@drawable/playmusik"
                 app:civ_border_color="@color/colorAccent"
                 app:civ_border_width="6dp"
@@ -41,23 +44,25 @@
                 android:layout_height="wrap_content"
                 android:text="@string/edit1"
                 android:textAlignment="center"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"/>
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="20dp" />
+                android:layout_height="5dp" />
 
             <Button
                 android:id="@+id/button1"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="120dp"
-                android:text="@string/edit2" />
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="130dp"
+                android:text="@string/edit2"
+                android:textSize="10sp" />
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="20dp" />
+                android:layout_height="5dp" />
 
             <TextView
                 android:id="@+id/text2"
@@ -65,18 +70,21 @@
                 android:layout_height="wrap_content"
                 android:text="@string/edit3"
                 android:textAlignment="center"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"/>
         </LinearLayout>
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="20dp" />
+            android:layout_height="10dp"
+            android:background="@color/colorBlack"/>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:orientation="horizontal">
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:background="@color/colorBlack">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -90,25 +98,35 @@
                     android:layout_weight="1"
                     android:orientation="horizontal">
 
-                    <ImageView
-                        android:id="@+id/imageView3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                    <LinearLayout
+                        android:layout_width="200dp"
+                        android:layout_height="100dp"
                         android:layout_weight="1"
-                        android:src="@drawable/awal" />
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="80dp"
+                            android:layout_height="50dp"
+                            android:layout_marginRight="40dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/awal" />
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="80dp"
+                        android:layout_marginRight="20dp"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
                         <TextView
                             android:id="@+id/text3"
                             android:layout_width="match_parent"
-                            android:layout_height="40dp"
+                            android:layout_height="30dp"
                             android:text="@string/edit4"
-                            android:textSize="24sp"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="15sp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -116,8 +134,9 @@
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
                             android:text="@string/edit5"
-                            android:textSize="18sp"
-                            android:textStyle="bold" />
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorWhite"/>
 
                     </LinearLayout>
                 </LinearLayout>
@@ -125,72 +144,13 @@
             </LinearLayout>
 
 
-
-
         </LinearLayout>
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="30dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:id="@+id/imageView4"
-                        android:layout_width="300dp"
-                        android:layout_height="100dp"
-                        android:layout_weight="1"
-                        android:src="@drawable/afgan" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="80dp"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:id="@+id/text5"
-                            android:layout_width="match_parent"
-                            android:layout_height="40dp"
-                            android:text="@string/edit4"
-                            android:textSize="24sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/text6"
-                            android:layout_width="match_parent"
-                            android:layout_height="40dp"
-                            android:text="@string/edit5"
-                            android:textSize="18sp"
-                            android:textStyle="bold" />
-
-                    </LinearLayout>
-                </LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="60dp" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:background="@color/colorBlack">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -198,128 +158,285 @@
                 android:orientation="vertical">
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
                     android:orientation="horizontal">
 
                     <LinearLayout
-                        android:layout_width="60dp"
+                        android:layout_width="200dp"
                         android:layout_height="100dp"
-                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="80dp"
+                            android:layout_height="50dp"
+                            android:layout_marginRight="40dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/iki" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
                         android:orientation="vertical">
 
-                        <ImageButton
-                            android:id="@+id/imageButton"
+                        <TextView
+                            android:id="@+id/text5"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/baseline_account_circle_black_18dp" />
+                            android:layout_height="30dp"
+                            android:text="@string/edit41"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/text6"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="@string/edit5"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorWhite"/>
+
+                    </LinearLayout>
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:background="@color/colorBlack">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="200dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="80dp"
+                            android:layout_height="50dp"
+                            android:layout_marginRight="40dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/afgan" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
 
                         <TextView
                             android:id="@+id/text7"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/edit6"
-                            android:textAlignment="center"
-                            android:textSize="12sp"
+                            android:layout_height="30dp"
+                            android:text="@string/edit42"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="15sp"
                             android:textStyle="bold" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="60dp"
-                        android:layout_height="100dp"
-                        android:layout_marginLeft="10dp"
-                        android:orientation="vertical">
-
-                        <ImageButton
-                            android:id="@+id/imageButton6"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/baseline_star_black_18dp" />
 
                         <TextView
                             android:id="@+id/text8"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/edit7"
-                            android:textAlignment="center"
-                            android:textSize="12sp"
+                            android:layout_height="40dp"
+                            android:text="@string/edit5"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorWhite"
                             android:textStyle="bold" />
 
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="60dp"
-                        android:layout_height="100dp"
-                        android:layout_marginLeft="10dp"
-                        android:orientation="vertical">
-
-                        <ImageButton
-                            android:id="@+id/imageButton7"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/baseline_home_black_18dp" />
-
-                        <TextView
-                            android:id="@+id/text9"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/edit8"
-                            android:textAlignment="center"
-                            android:textSize="12sp"
-                            android:textStyle="bold" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="60dp"
-                        android:layout_height="100dp"
-                        android:layout_marginLeft="10dp"
-                        android:orientation="vertical">
-
-                        <ImageButton
-                            android:id="@+id/imageButton8"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/baseline_comment_black_18dp" />
-
-                        <TextView
-                            android:id="@+id/text10"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/edit9"
-                            android:textAlignment="center"
-                            android:textSize="12sp"
-                            android:textStyle="bold" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="60dp"
-                        android:layout_height="100dp"
-                        android:layout_marginLeft="10dp"
-                        android:orientation="vertical">
-
-
-                        <ImageButton
-                            android:id="@+id/imageButton9"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/baseline_search_black_18dp" />
-
-                        <TextView
-                            android:id="@+id/text11"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginRight="15dp"
-                            android:text="@string/edit10"
-                            android:textAlignment="center"
-                            android:textSize="12sp"
-                            android:textStyle="bold" />
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="@color/colorBlack">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/rosa" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text9"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="@string/edit43"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text10"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="@string/edit5"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
     </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/colorWhite"
+                    android:src="@drawable/baseline_account_circle_black_18dp" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/edit6"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imageButton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/colorWhite"
+                    android:src="@drawable/baseline_star_black_18dp" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/edit7"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/colorWhite"
+                    android:src="@drawable/baseline_home_black_18dp" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/edit8"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imageButton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/colorWhite"
+                    android:src="@drawable/baseline_chat_black_18dp" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/edit9"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imageButton4"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/colorWhite"
+                    android:src="@drawable/baseline_search_black_18dp" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/edit10"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
 </RelativeLayout>
