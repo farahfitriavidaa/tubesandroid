@@ -24,5 +24,13 @@
     <string name="cari7">Relaxing</string>
     <string name="cari8">Famele</string>
 
+    <string-array name="array_country">
+        <item>HIP-HOP</item>
+        <item>ROCK</item>
+        <item>EDM</item>
+        <item>LOVE</item>
+        <item>RELAXING</item>
+        <item>FAMELE</item>
+    </string-array>
 
 </resources>

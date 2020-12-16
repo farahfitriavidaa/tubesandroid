@@ -24,11 +24,21 @@ public class MainActivity extends AppCompatActivity {
     Button pindahcari;
     Button pindahHome;
     Button pindahFavorit;
+    Button pindahcaridua;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        pindahcaridua = findViewById(R.id.caridua);
+        pindahcaridua.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, caridua.class);
+                startActivity(intent);
+            }
+        });
 
         pindahcari = findViewById(R.id.button4);
         pindahcari.setOnClickListener(new View.OnClickListener() {
