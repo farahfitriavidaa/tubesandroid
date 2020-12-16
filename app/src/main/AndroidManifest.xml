@@ -10,6 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+        <activity android:name=".Notifikasi"></activity>
+        <activity android:name=".Pembaruan"></activity>
         <activity android:name=".Cari"></activity>
         <activity android:name=".Home"></activity>
         <activity android:name=".Favorit"></activity>
