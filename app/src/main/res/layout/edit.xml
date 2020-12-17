@@ -332,111 +332,14 @@
     </LinearLayout>
     </LinearLayout>
 
-        <LinearLayout
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_nav"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="@color/colorWhite"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="70dp"
-                android:layout_height="60dp"
-                android:orientation="vertical">
-
-                <ImageButton
-                    android:id="@+id/imageButton"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:background="@color/colorWhite"
-                    android:src="@drawable/baseline_account_circle_black_18dp" />
-
-                <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/edit6"
-                    android:textAlignment="center"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="70dp"
-                android:layout_height="60dp"
-                android:orientation="vertical">
-
-                <ImageButton
-                    android:id="@+id/imageButton1"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:background="@color/colorWhite"
-                    android:src="@drawable/baseline_star_black_18dp" />
-
-                <TextView
-                    android:id="@+id/textView5"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/edit7"
-                    android:textAlignment="center" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="70dp"
-                android:layout_height="60dp"
-                android:orientation="vertical">
-
-                <ImageButton
-                    android:id="@+id/imageButton2"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:background="@color/colorWhite"
-                    android:src="@drawable/baseline_home_black_18dp" />
-
-                <TextView
-                    android:id="@+id/textView6"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/edit8"
-                    android:textAlignment="center" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="70dp"
-                android:layout_height="60dp"
-                android:orientation="vertical">
-
-                <ImageButton
-                    android:id="@+id/imageButton3"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:background="@color/colorWhite"
-                    android:src="@drawable/baseline_chat_black_18dp" />
-
-                <TextView
-                    android:id="@+id/textView9"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/edit9"
-                    android:textAlignment="center" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="70dp"
-                android:layout_height="60dp"
-                android:orientation="vertical">
-
-                <ImageButton
-                    android:id="@+id/imageButton4"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:background="@color/colorWhite"
-                    android:src="@drawable/baseline_search_black_18dp" />
-
-                <TextView
-                    android:id="@+id/textView10"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/edit10"
-                    android:textAlignment="center" />
-            </LinearLayout>
-        </LinearLayout>
+            android:layout_height="wrap_content"
+            app:menu="@menu/bottom_navigation"
+            android:layout_alignParentBottom="true"
+            app:itemBackground="?android:attr/windowBackground"
+            app:itemIconTint="@android:color/black"
+            app:itemTextColor="@android:color/black" />
     </LinearLayout>
 </RelativeLayout>
