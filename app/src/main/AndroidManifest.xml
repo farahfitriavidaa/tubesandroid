@@ -20,6 +20,7 @@
         <activity android:name=".Play"></activity>
         <activity android:name=".Edit"></activity>
         <activity android:name=".caridua"></activity>
+        <activity android:name=".List"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
