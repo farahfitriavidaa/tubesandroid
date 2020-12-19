@@ -3,10 +3,12 @@ package id.ac.telkomuniversity.vsi3f4.tubesandroid;
 import android.app.Activity;
 import android.app.ListActivity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
@@ -15,6 +17,10 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -35,6 +41,9 @@ public class caridua extends ListActivity {
         setContentView(R.layout.caridua);
         final EditText kotakpencari = (EditText) findViewById(R.id.kotakpencari);
         ListView playersListView = (ListView) findViewById(android.R.id.list);
+
+        BottomNavigationView bottomNav = findViewById(R.id.bottom_nav);
+        bottomNav.setOnNavigationItemSelectedListener(navListener);
 
         //mengambil LayoutInflater untuk inflating thcustomView
         //disini akan menggunakan custom adapter
@@ -175,4 +184,34 @@ public class caridua extends ListActivity {
         }
 
     }
+
+    private BottomNavigationView.OnNavigationItemSelectedListener navListener =
+            new BottomNavigationView.OnNavigationItemSelectedListener() {
+                @Override
+                public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                    switch (item.getItemId()) {
+                        case R.id.nav_home:
+                            Intent intent = new Intent(caridua.this, Home.class);
+                            startActivity(intent);
+                            break;
+                        case R.id.nav_favorite:
+                            Intent inten = new Intent(caridua.this, Favorit.class);
+                            startActivity(inten);
+                            break;
+                        case R.id.nav_notificaton:
+                            Intent intens = new Intent(caridua.this,Notifikasi.class);
+                            startActivity(intens);
+                            break;
+                        case R.id.nav_profile:
+                            Intent intern = new Intent(caridua.this, Edit.class);
+                            startActivity(intern);
+                            break;
+                        case R.id.nav_search:
+                            Intent inte = new Intent(caridua.this, caridua.class);
+                            startActivity(inte);
+                            break;
+                    }
+                    return true;
+                }
+            };
 }

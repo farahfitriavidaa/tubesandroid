@@ -7,6 +7,10 @@
     android:background="#FFFF"
     tools:context=".Edit">
 
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottom_nav">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -330,6 +334,8 @@
     </LinearLayout>
     </LinearLayout>
     </LinearLayout>
+    </LinearLayout>
+        </FrameLayout>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottom_nav"
@@ -340,5 +346,5 @@
             app:itemBackground="?android:attr/windowBackground"
             app:itemIconTint="@android:color/black"
             app:itemTextColor="@android:color/black" />
-    </LinearLayout>
+
 </RelativeLayout>
