@@ -37,8 +37,8 @@ public class List extends Activity {
                 playSound(3);
             }
         });
-        lg3 = (ImageButton) findViewById(R.id.lg4);
-        lg3.setOnClickListener(new View.OnClickListener(){
+        lg4 = (ImageButton) findViewById(R.id.lg4);
+        lg4.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick (View arg0){
                 playSound(4);
@@ -51,7 +51,7 @@ public class List extends Activity {
                 playSound(5);
             }
         });
-        lg6 = (ImageButton) findViewById(R.id.lg5);
+        lg6 = (ImageButton) findViewById(R.id.lg6);
         lg6.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick (View arg0){
@@ -81,7 +81,8 @@ public class List extends Activity {
         }else if (arg ==2){
             Toast.makeText(this, isPlay+ "Lagu 2", Toast.LENGTH_LONG).show();
             player = MediaPlayer.create(this, R.raw.its);
-        }else if (arg ==3){
+   }
+        else if (arg ==3){
             Toast.makeText(this, isPlay+ "Lagu 3", Toast.LENGTH_LONG).show();
             player = MediaPlayer.create(this, R.raw.justin);
         }else if (arg ==4){

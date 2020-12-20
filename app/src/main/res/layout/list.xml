@@ -8,31 +8,32 @@
     tools:context=".List">
 
     <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="413dp"
-        android:layout_height="83dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/list"
-            android:layout_width="401dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Semua Playlist"
-            android:textAlignment="center"
-            android:textSize="46px"
-            android:textStyle="bold" />
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="413dp"
+            android:layout_height="83dp"
+            android:orientation="horizontal">
 
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
+            <TextView
+                android:id="@+id/list"
+                android:layout_width="401dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Semua Playlist"
+                android:textAlignment="center"
+                android:textSize="46px"
+                android:textStyle="bold" />
 
-    </LinearLayout>
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
 
     <LinearLayout
         android:layout_width="413dp"
@@ -49,142 +50,133 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@drawable/lg1" />
+            android:src="@drawable/lg1" />
 
         <ImageButton
             android:id="@+id/lg2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@drawable/lg2" />
+            android:src="@drawable/lg2" />
 
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/linearLayout4"
-        android:layout_width="402dp"
-        android:layout_height="58dp"
-        android:layout_marginBottom="424dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <TextView
-            android:id="@+id/list1"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Afgan - Kunci Hari" />
+            android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/list2"
-            android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/list1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Afgan - Kunci Hari" />
+
+
+            <TextView
+                android:id="@+id/list2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Raisa - Kali Kedua" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="413dp"
+            android:layout_height="155dp"
+            android:layout_marginEnd="4dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.159">
+
+            <ImageButton
+                android:id="@+id/lg3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/lg1" />
+
+            <ImageButton
+                android:id="@+id/lg4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/lg2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Raisa - Kali Kedua" />
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/list3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mahen - Luka Yang Ku Rindu" />
+
+
+            <TextView
+                android:id="@+id/list4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Andmesh - Kumau Dia" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="413dp"
+            android:layout_height="155dp"
+            android:layout_marginEnd="4dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.159">
+
+            <ImageButton
+                android:id="@+id/lg5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/lg1" />
+
+            <ImageButton
+                android:id="@+id/lg6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/lg2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/list5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Andmesh Kameleng - Cinta Luar Biasa" />
+
+                    <TextView
+                        android:id="@+id/list6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Ali Gatie - It's You" />
+
+        </LinearLayout>
+
     </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout3"
-        android:layout_width="415dp"
-        android:layout_height="111dp"
-        android:layout_marginBottom="308dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <ImageButton
-            android:id="@+id/lg3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/lg1" />
-
-        <ImageButton
-            android:id="@+id/lg4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/lg2" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="405dp"
-        android:layout_height="47dp"
-        android:layout_marginBottom="260dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" >
-
-        <TextView
-            android:id="@+id/list3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Mahen - Luka Yang Ku Rindu" />
-
-        <TextView
-            android:id="@+id/list4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Andmesh - Kumau Dia" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="410dp"
-        android:layout_height="117dp"
-        android:layout_marginBottom="140dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <ImageButton
-            android:id="@+id/lg5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/lg1" />
-
-        <ImageButton
-            android:id="@+id/lg6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/lg2" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="414dp"
-        android:layout_height="48dp"
-        android:layout_marginBottom="92dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <TextView
-            android:id="@+id/list5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Andmesh Kameleng - Cinta Luar Biasa" />
-
-        <TextView
-            android:id="@+id/list6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Ali Gatie - It's You" />
-    </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
