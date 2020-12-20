@@ -24,6 +24,8 @@
             android:layout_marginTop="52dp"
             android:background="#FFFFFF"
             android:text="Playlist Favorite"
+            android:textAlignment="center"
+            android:textSize="46px"
             android:textStyle="bold"
             tools:background="#FFFFFF" />
 
@@ -43,7 +45,7 @@
             android:id="@+id/button3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Buttonove Story 3" />
+            android:text="Love Story 3" />
 
         <Button
             android:id="@+id/button4"

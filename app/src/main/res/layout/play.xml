@@ -39,6 +39,8 @@
         android:layout_height="26dp"
         android:background="#B1AAAA"
         android:text="Quick Sing"
+        android:textAlignment="center"
+        android:textSize="46px"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

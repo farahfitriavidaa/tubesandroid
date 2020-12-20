@@ -19,10 +19,12 @@
 
         <TextView
             android:id="@+id/list"
-            android:layout_width="wrap_content"
+            android:layout_width="401dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Semua Playlist"
+            android:textAlignment="center"
+            android:textSize="46px"
             android:textStyle="bold" />
 
         <Space
@@ -47,14 +49,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@drawable/whatsapp_image_2020_12_16_at_20_57_01" />
+            app:srcCompat="@drawable/lg1" />
 
         <ImageButton
             android:id="@+id/lg2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@drawable/whatsapp_image_2020_12_16_at_20_57_01__1_" />
+            app:srcCompat="@drawable/lg2" />
 
     </LinearLayout>
 
@@ -100,14 +102,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@drawable/whatsapp_image_2020_12_16_at_20_57_01" />
+            app:srcCompat="@drawable/lg1" />
 
         <ImageButton
             android:id="@+id/lg4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@drawable/whatsapp_image_2020_12_16_at_20_57_01__1_" />
+            app:srcCompat="@drawable/lg2" />
     </LinearLayout>
 
     <LinearLayout
@@ -150,14 +152,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@drawable/whatsapp_image_2020_12_16_at_20_57_01" />
+            app:srcCompat="@drawable/lg1" />
 
         <ImageButton
             android:id="@+id/lg6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@drawable/whatsapp_image_2020_12_16_at_20_57_01__1_" />
+            app:srcCompat="@drawable/lg2" />
     </LinearLayout>
 
     <LinearLayout
