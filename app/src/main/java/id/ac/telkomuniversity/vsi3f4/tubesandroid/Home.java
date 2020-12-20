@@ -46,7 +46,7 @@ public class Home extends AppCompatActivity {
                             startActivity(inte);
                             break;
                     }
-                    return true;
+                    return false;
                 }
             };
 }

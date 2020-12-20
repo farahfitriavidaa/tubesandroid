@@ -211,7 +211,7 @@ public class caridua extends ListActivity {
                             startActivity(inte);
                             break;
                     }
-                    return true;
+                    return false;
                 }
             };
 }

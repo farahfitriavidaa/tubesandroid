@@ -10,9 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".Notifikasi"></activity>
         <activity android:name=".Pembaruan"></activity>
-        <activity android:name=".Cari"></activity>
         <activity android:name=".Home"></activity>
         <activity android:name=".Favorit"></activity>
         <activity android:name=".DuaActivity"></activity>

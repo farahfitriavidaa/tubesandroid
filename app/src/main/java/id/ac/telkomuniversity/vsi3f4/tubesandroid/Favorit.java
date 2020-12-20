@@ -131,7 +131,7 @@ public class Favorit extends Activity {
                             startActivity(inte);
                             break;
                     }
-                    return true;
+                    return false;
                 }
             };
 }

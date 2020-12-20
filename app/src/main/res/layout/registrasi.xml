@@ -74,7 +74,8 @@
                 android:id="@+id/ButtonLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Register" />
+                android:text="Register"
+                android:background="@color/colorAbu"/>
 
         </LinearLayout>
     </LinearLayout>

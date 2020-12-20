@@ -40,15 +40,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-        pindahcari = findViewById(R.id.button4);
-        pindahcari.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Cari.class);
-                startActivity(intent);
-            }
-        });
         pindahButton = findViewById(R.id.pindahbuttonsatu);
         pindahButton.setOnClickListener(new View.OnClickListener() {
             @Override

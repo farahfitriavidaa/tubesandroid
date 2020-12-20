@@ -11,7 +11,6 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Edit extends Activity {
 
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.edit);
@@ -45,7 +44,7 @@ public class Edit extends Activity {
                             startActivity(inte);
                             break;
                     }
-                    return true;
+                    return false;
                 }
             };
 }

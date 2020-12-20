@@ -81,8 +81,7 @@ public class List extends Activity {
         }else if (arg ==2){
             Toast.makeText(this, isPlay+ "Lagu 2", Toast.LENGTH_LONG).show();
             player = MediaPlayer.create(this, R.raw.its);
-   }
-        else if (arg ==3){
+        }else if (arg ==3){
             Toast.makeText(this, isPlay+ "Lagu 3", Toast.LENGTH_LONG).show();
             player = MediaPlayer.create(this, R.raw.justin);
         }else if (arg ==4){
