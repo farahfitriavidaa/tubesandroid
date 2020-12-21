@@ -52,8 +52,8 @@ public class Halaman2 extends AppCompatActivity {
         keluar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
                 mp.stop();
+                finish();
             }
         });
     }
