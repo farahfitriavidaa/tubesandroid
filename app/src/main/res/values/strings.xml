@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">MUSIC</string>
     <string name="login1">Login</string>
-    <string name="login2">Untuk Masuk ke *Aplikasi Musik*, masukan Username dan Passwors anda di bawah ini</string>
+    <string name="login2">Untuk Masuk ke APP MUSIC, masukan Username dan Password anda di bawah ini</string>
     <string name="login3">Username</string>
     <string name="login4">Password</string>
     <string name="login5">Belum punya akun? DAFTAR</string>

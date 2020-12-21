@@ -1,64 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#B1AAAA"
-    tools:background="#B1AAAA"
-    tools:context=".Play">
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="402dp"
-        android:layout_height="402dp"
-        android:layout_marginBottom="332dp"
-        android:background="#B1AAAA"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
-        app:layout_constraintStart_toStartOf="parent">
+    android:background="@color/colorBlack"
+    tools:context=".Play"
+    android:orientation="vertical">
 
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/play_musik" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/play_musik" />
 
         <Space
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-    </LinearLayout>
-
     <TextView
         android:id="@+id/QuickSing"
-        android:layout_width="88dp"
+        android:layout_width="match_parent"
         android:layout_height="26dp"
-        android:background="#B1AAAA"
-        android:text="Quick Sing"
+        android:text="Billie Elish - Quickly"
         android:textAlignment="center"
-        android:textSize="46px"
+        android:textSize="55px"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.547"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.605" />
+        android:textColor="@color/colorWhite"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
 
     <LinearLayout
-        android:layout_width="342dp"
+        android:layout_width="match_parent"
         android:layout_height="51dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="168dp"
         android:background="#B1AAAA"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:background="#B1AAAA">
+        tools:background="@color/colorBlack">
 
         <Space
             android:layout_width="wrap_content"
@@ -70,22 +50,8 @@
             android:layout_width="63dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#F8F0F0"
+            android:background="@color/colorWhite"
             android:text="Play" />
-
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="#F8F0F0"
-            android:text="pause"
-            android:textStyle="bold" />
 
         <Space
             android:layout_width="wrap_content"
@@ -97,8 +63,22 @@
             android:layout_width="66dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#F8F0F0"
+            android:background="@color/colorWhite"
             android:text="stop"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:text="Pause"
             android:textStyle="bold" />
 
         <Space
@@ -108,4 +88,4 @@
     </LinearLayout>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

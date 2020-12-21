@@ -1,6 +1,7 @@
 package id.ac.telkomuniversity.vsi3f4.tubesandroid;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
@@ -55,7 +56,8 @@ public class List extends Activity {
         lg6.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick (View arg0){
-                playSound(6);
+                Intent in = new Intent(List.this,Play.class);
+                startActivity(in);
             }
         });
     }
