@@ -184,22 +184,27 @@ public class Home extends AppCompatActivity {
                 public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                     switch (item.getItemId()) {
                         case R.id.nav_home:
+                            player.stop();
                             Intent intent = new Intent(Home.this, Home.class);
                             startActivity(intent);
                             break;
                         case R.id.nav_favorite:
+                            player.stop();
                             Intent inten = new Intent(Home.this, Favorit.class);
                             startActivity(inten);
                             break;
                         case R.id.nav_notificaton:
+                            player.stop();
                                 Intent intens = new Intent(Home.this,Notifikasi.class);
                                 startActivity(intens);
                             break;
                         case R.id.nav_profile:
+                            player.stop();
                             Intent intern = new Intent(Home.this, Edit.class);
                             startActivity(intern);
                             break;
                         case R.id.nav_search:
+                            player.stop();
                             Intent inte = new Intent(Home.this, caridua.class);
                             startActivity(inte);
                             break;

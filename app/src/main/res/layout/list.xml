@@ -1,32 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".List">
+    tools:context=".List"
+    android:orientation="vertical"
+    android:background="@color/colorBlack">
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:src="@drawable/logomusic" />
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <LinearLayout
             android:id="@+id/linearLayout2"
             android:layout_width="413dp"
             android:layout_height="83dp"
             android:orientation="horizontal">
 
-            <TextView
+        <TextView
                 android:id="@+id/list"
                 android:layout_width="401dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Semua Playlist"
                 android:textAlignment="center"
-                android:textSize="46px"
-                android:textStyle="bold" />
+                android:textSize="55px"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"/>
 
             <Space
                 android:layout_width="wrap_content"
@@ -71,7 +75,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Afgan - Kunci Hari" />
+                android:text="Afgan - Kunci Hari"
+                android:textColor="@color/colorWhite"/>
 
 
             <TextView
@@ -79,7 +84,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Raisa - Kali Kedua" />
+                android:text="Raisa - Kali Kedua"
+                android:textColor="@color/colorWhite"/>
 
         </LinearLayout>
 
@@ -119,7 +125,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Mahen - Luka Yang Ku Rindu" />
+                android:text="Mahen - Luka Yang Ku Rindu"
+                android:textColor="@color/colorWhite"/>
 
 
             <TextView
@@ -127,7 +134,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Andmesh - Kumau Dia" />
+                android:text="Andmesh - Kumau Dia"
+                android:textColor="@color/colorWhite"/>
 
         </LinearLayout>
 
@@ -167,16 +175,18 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Andmesh Kameleng - Cinta Luar Biasa" />
+                        android:text="Andmesh Kameleng - Cinta Luar Biasa"
+                        android:textColor="@color/colorWhite"/>
 
                     <TextView
                         android:id="@+id/list6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Ali Gatie - It's You" />
+                        android:text="Ali Gatie - It's You"
+                        android:textColor="@color/colorWhite"/>
 
         </LinearLayout>
 
     </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
