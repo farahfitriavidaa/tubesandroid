@@ -15,7 +15,7 @@ import android.widget.Toast;
 public class Registrasi extends Activity {
     protected Cursor cursor;
     Database dbapp;
-    Button btn1;
+    Button btn1,kembali;
     EditText email,user,pass;
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +27,7 @@ public class Registrasi extends Activity {
         user  = findViewById(R.id.username);
         pass  = findViewById(R.id.password);
         btn1  = findViewById(R.id.ButtonLogin);
+        kembali = findViewById(R.id.back);
 
         //register
         btn1.setOnClickListener(new View.OnClickListener() {
@@ -45,6 +46,14 @@ public class Registrasi extends Activity {
                     Toast.makeText(getApplicationContext(),"Daftar Gagal",Toast.LENGTH_SHORT).show();
                 }
 
+            }
+        });
+
+        kembali.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent n = new Intent(Registrasi.this,Halaman2.class);
+                startActivity(n);
             }
         });
     }

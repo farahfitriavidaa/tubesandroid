@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class DuaActivity extends Activity {
         Database db;
-        Button login,register;
+        Button login,kembali;
         EditText username, password;
 
         @Override
@@ -21,9 +21,10 @@ public class DuaActivity extends Activity {
             setContentView(R.layout.loggin);
 
             db = new Database(this);
-            username = findViewById(R.id.username);
-            password = findViewById(R.id.password);
+            username = findViewById(R.id.EdittUsername);
+            password = findViewById(R.id.EditPassword);
             login    = findViewById(R.id.ButtonLogin);
+            kembali = findViewById(R.id.back);
 
 
             login.setOnClickListener(new View.OnClickListener() {
@@ -36,7 +37,7 @@ public class DuaActivity extends Activity {
                         Boolean updateSession = db.upgradeSession("ada", 1);
                         if (updateSession == true) {
                             Toast.makeText(getApplicationContext(), "Berhasil Masuk", Toast.LENGTH_SHORT).show();
-                            Intent mainIntent = new Intent(DuaActivity.this, MainActivity.class);
+                            Intent mainIntent = new Intent(DuaActivity.this, Home.class);
                             startActivity(mainIntent);
                             finish();
                         }
@@ -44,6 +45,14 @@ public class DuaActivity extends Activity {
                     else {
                         Toast.makeText(getApplicationContext(),"Masuk Gagal",Toast.LENGTH_SHORT).show();
                     }
+                }
+            });
+
+            kembali.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent n = new Intent(DuaActivity.this,Halaman2.class);
+                    startActivity(n);
                 }
             });
 

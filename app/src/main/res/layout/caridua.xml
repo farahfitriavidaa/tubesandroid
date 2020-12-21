@@ -25,6 +25,6 @@
         app:menu="@menu/bottom_navigation"
         android:layout_alignParentBottom="true"
         app:itemBackground="?android:attr/windowBackground"
-        app:itemIconTint="@drawable/selector"
-        app:itemTextColor="@drawable/selector" />
+        app:itemIconTint="@color/colorBlack"
+        app:itemTextColor="@color/colorBlack" />
 </RelativeLayout>

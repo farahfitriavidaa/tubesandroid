@@ -11,12 +11,20 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
+        android:orientation="horizontal"
+        android:padding="35dp"
         android:background="@drawable/awal">
 
-        <Space
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView11"
             android:layout_width="match_parent"
-            android:layout_height="55dp" />
+            android:layout_height="55dp"
+            android:src="@drawable/logomusic" />
 
         <TextView
             android:id="@+id/textSatu"
@@ -24,13 +32,15 @@
             android:layout_height="wrap_content"
             android:text="@string/login1"
             android:textSize="25dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"/>
 
         <TextView
             android:id="@+id/textDua"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/login2" />
+            android:text="@string/login2"
+            android:textColor="@color/colorBlack"/>
 
         <Space
             android:layout_width="match_parent"
@@ -40,7 +50,7 @@
             android:id="@+id/EdittUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/login3" />
+            android:hint="@string/login3" />
 
         <Space
             android:layout_width="match_parent"
@@ -50,17 +60,8 @@
             android:id="@+id/EditPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/login4" />
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="50dp" />
-
-        <TextView
-            android:id="@+id/textTiga"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/login5" />
-
+            android:hint="@string/login4"
+            android:inputType="textPassword"/>
         <Space
             android:layout_width="match_parent"
             android:layout_height="50dp" />
@@ -69,18 +70,24 @@
             android:id="@+id/ButtonLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/login1" />
+            android:text="@string/login1"
+            android:background="@color/colorBlack"
+            android:textColor="@color/colorWhite"/>
 
         <Space
             android:layout_width="match_parent"
             android:layout_height="50dp" />
 
         <Button
-            android:id="@+id/ButtonRegister"
+            android:id="@+id/back"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Register" />
+            android:text="Kembali"
+            android:background="@color/colorBlack"
+            android:textColor="@color/colorWhite"/>
 
+
+    </LinearLayout>
     </LinearLayout>
 
 

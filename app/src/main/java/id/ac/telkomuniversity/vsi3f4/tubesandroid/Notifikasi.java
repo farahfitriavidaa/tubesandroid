@@ -25,17 +25,6 @@ public class Notifikasi extends Activity {
         BottomNavigationView bottomNav = findViewById(R.id.bottom_nav);
         bottomNav.setOnNavigationItemSelectedListener(navListener);
 
-        notif = findViewById(R.id.button10);
-        pembaruan = findViewById(R.id.button11);
-
-        pembaruan.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Notifikasi.this,Pembaruan.class);
-                startActivity(intent);
-            }
-        });
-
     }
 
     private BottomNavigationView.OnNavigationItemSelectedListener navListener =

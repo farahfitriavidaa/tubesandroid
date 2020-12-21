@@ -18,9 +18,15 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:src="@drawable/logomusic" />
+
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="55dp" />
+                android:layout_height="15dp" />
 
             <TextView
                 android:id="@+id/textSatu"
@@ -28,13 +34,15 @@
                 android:layout_height="wrap_content"
                 android:text="Registrasi"
                 android:textSize="25dp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"/>
 
             <TextView
                 android:id="@+id/textDua"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Yuk daftarkan akun mu di *Nama Aplikasi kita*, masukan data diri mu dibawah ini." />
+                android:text="Yuk daftarkan akun mu di *Nama Aplikasi kita*, masukan data diri mu dibawah ini."
+                android:textColor="@color/colorBlack"/>
 
             <Space
                 android:layout_width="match_parent"
@@ -44,7 +52,8 @@
                 android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Email" />
+                android:hint="Email"
+                android:inputType="textEmailAddress"/>
 
             <Space
                 android:layout_width="match_parent"
@@ -54,7 +63,7 @@
                 android:id="@+id/username"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Username" />
+                android:hint="Username" />
 
             <Space
                 android:layout_width="match_parent"
@@ -64,7 +73,8 @@
                 android:id="@+id/password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Password" />
+                android:hint="Password"
+                android:inputType="textPassword"/>
 
             <Space
                 android:layout_width="match_parent"
@@ -75,7 +85,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Register"
-                android:background="@color/colorAbu"/>
+                android:background="@color/colorBlack"
+                android:textColor="@color/colorWhite"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kembali"
+                android:background="@color/colorBlack"
+                android:textColor="@color/colorWhite"/>
 
         </LinearLayout>
     </LinearLayout>
